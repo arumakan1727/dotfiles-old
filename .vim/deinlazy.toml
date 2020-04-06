@@ -1,0 +1,54 @@
+#-----------------------------------------------------------------------------------
+# Plugins for Neovim and Vim {{{
+[[plugins]] # Emmet
+repo = 'mattn/emmet-vim'
+on_ft = ['html']
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+on_cmd = 'NERDTreeToggle'
+hook_add = '''
+  nnoremap <M-f> :NERDTreeToggle<CR>
+'''
+# }}}
+
+#-----------------------------------------------------------------------------------
+# Plugins for only Neovim {{{
+[[plugins]] # つよい補完してくれるやつ
+repo = 'Shougo/deoplete.nvim'
+if = "has('nvim')"
+on_event = 'InsertEnter'
+dpends = ['context_filetype.vim']
+hook_source = '''
+  source ~/.vim/plughook/deoplete-hook.vim
+'''
+
+[[plugins]] # スニペット使えるようにする
+repo = 'Shougo/neosnippet'
+if = "has('nvim')"
+depends = ['neosnippet-snippets']
+on_event = 'InsertEnter'
+on_ft = ['snippet']
+hook_source = '''
+  source ~/.vim/plughook/neosnippet-hook.vim
+'''
+
+[[plugins]] # シンタックスファイルを解析して補完を強化する(多分)
+repo = 'Shougo/neco-syntax'
+if = "has('nvim')"
+on_event = 'InsertEnter'
+
+[[plugins]] # neco-syntaxのVim特化版(多分)
+repo = 'Shougo/neco-vim'
+if = "has('nvim')"
+on_event = 'InsertEnter'
+
+# [[plugins]]
+# repo = 'dense-analysis/ale'
+# if = "has('nvim')"
+# on_event = 'InsertEnter'
+# hook_add = '''
+#   source ~/.vim/plughook/ale-hook.vim
+# '''
+
+# }}}

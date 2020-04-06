@@ -1,0 +1,27 @@
+#!/usr/bin/env sh
+
+# disable BIOS's bell
+xset -b
+
+# configure keyboard's repeat rate (delay[ms], frequency[Hz])
+xset r rate 280 30
+
+# IME
+export GTK_IM_MODULE=fcitx
+export XMODIFIERS=fcitx
+export QT_IM_MODULE=fcitx
+fcitx -rd &
+sleep 0.5
+
+# xkeysnail (key remapping)
+#  -> https://github.com/mooz/xkeysnail
+if [ -x /usr/bin/xkeysnail ] && [ -f ${HOME}/.xkeysnail/config.py ]; then
+  sudo /usr/bin/xkeysnail ${HOME}/.xkeysnail-conf.py &
+fi
+
+# Power saving for display monitor
+#  -> https://wiki.archlinux.jp/index.php/Display_Power_Management_Signaling
+#  -> http://www.shallowsky.com/linux/x-screen-blanking.html
+xset s off
+xset +dpms
+xset dpms 600 0 0

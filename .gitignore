@@ -1,0 +1,41 @@
+# ホワイトリスト形式で管理する
+/*
+/.**
+
+#--------------------------------------
+# /
+!/.bashrc
+!/.gitignore
+!/.inputrc
+!/.profile
+!/.vimrc
+!/.xinitrc
+!/.xkeysnail-conf.py
+!/.xprofile
+!/LICENSE
+
+#--------------------------------------
+# /.bash/
+!/.bash/
+!/.bash/**
+!/.bash/alias.sh
+!/.bash/functions.sh
+
+#--------------------------------------
+# /.config/
+!/.config/
+!/.config/**
+!/.config/nvim
+!/.config/redshift.conf
+
+!/.config/fish/
+!/.config/fish/**
+!/.config/fish/config.fish
+
+!/.config/fontconfig/
+!/.config/fontconfig/**
+!/.config/fontconfig/fonts.conf
+
+!/.config/fcitx/
+!/.config/fcitx/**
+!/.config/fcitx/config

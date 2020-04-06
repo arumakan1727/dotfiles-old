@@ -1,0 +1,101 @@
+#-----------------------------------------------------------------------------------
+# Plugins for Vim and Neovim {{{
+[[plugins]] # プラグインマネージャ
+repo = 'Shougo/dein.vim'
+
+[[plugins]] # カーソル位置のコンテキストに合わせてfiletypeを切り替える
+repo = 'osyo-manga/vim-precious'
+
+[[plugins]] # カーソル位置のコンテキストのfiletypeを判定するライブラリ
+repo = 'Shougo/context_filetype.vim'
+
+[[plugins]] # 囲える
+repo = 'tpope/vim-surround'
+
+[[plugins]] # 整形
+repo = 'junegunn/vim-easy-align'
+hook_add = '''
+  nmap ga <Plug>(EasyAlign)
+  xmap ga <Plug>(EasyAlign)
+'''
+
+[[plugins]] # 簡単にコメントトグル
+repo = 'tpope/vim-commentary'
+
+[[plugins]] # statusline をつよつよにする
+repo = 'vim-airline/vim-airline'
+hook_add = '''
+  source ~/.vim/plughook/airline-hook.vim
+'''
+
+[[plugins]] # airline のテーマ
+repo = 'vim-airline/vim-airline-themes'
+depends = 'vim-airline'
+hook_add = '''
+  let g:airline_theme='luna'
+'''
+
+[[plugins]] # カッコやクォートの自動閉じなど
+repo = 'jiangmiao/auto-pairs'
+on_event = 'InsertEnter'
+
+[[plugins]] # 行末の空白文字を削除するコマンドを追加
+repo = 'bronson/vim-trailing-whitespace'
+
+[[plugins]] # vim-surround とかの操作も . でリピートできるようにする
+repo = 'bronson/vim-trailing-whitespace'
+
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+hook_add = '''
+  let g:indentLine_char = '┊'
+'''
+# }}}
+
+#-----------------------------------------------------------------------------------
+# Plugins for only Neovim {{{
+[[plugins]] # terminalがもっと便利になる
+repo = 'kassio/neoterm'
+if = "has('nvim')"
+
+[[plugins]] # なんかすごいやつ
+repo = 'Shougo/denite.nvim'
+if = "has('nvim')"
+
+[[plugins]] # 便利なスニペット群
+repo = 'Shougo/neosnippet-snippets'
+if = "has('nvim')"
+
+[[plugins]]
+repo = 'autozimu/LanguageClient-neovim'
+if = "has('nvim')"
+rev = 'next'
+hook_add = '''
+  source ~/.vim/plughook/languageClientNeovim-hook.vim
+'''
+hook_post_update = '''
+  call system('bash install.sh')
+'''
+# }}}
+
+#-----------------------------------------------------------------------------------
+# Syntax highlight {{{
+[[plugins]]
+repo = 'cespare/vim-toml'
+
+[[plugins]]
+repo = 'bfrg/vim-cpp-modern'
+#}}}
+
+#-----------------------------------------------------------------------------------
+# Colorshemes {{{
+[[plugins]]
+repo = 'w0ng/vim-hybrid'
+hook_add = '''
+  set background=dark
+  au MyAutoCmd VimEnter * nested hi NonText ctermfg=red guifg=#cc6666
+'''
+
+[[plugins]]
+repo = 'cocopon/iceberg.vim'
+# }}}
