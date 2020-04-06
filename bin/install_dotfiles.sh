@@ -38,6 +38,11 @@ link_to_homedir() {
       command echo "Make symlink: $HOME/`basename $f` -> $f"
       command ln -snf $f $HOME
     done
+
+    if [ -d "$HOME/bin" ]; then
+      command mv "$HOME/bin/*" "$backup_dir/"
+    fi
+    command ln -snf $dotdir/bin $HOME
   else
     command echo "same install src dest"
   fi
