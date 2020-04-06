@@ -23,7 +23,7 @@ let s:dein_repo_dir = s:dein_cache_path
 
 if &runtimepath !~ '/dein.vim'
   if !isdirectory(s:dein_repo_dir)
-    call system('git clone https://github.com/Shougo/dein.vim' . shellescape(s:dein_repo_dir))
+    call system('git clone https://github.com/Shougo/dein.vim ' . shellescape(s:dein_repo_dir))
   endif
   let &runtimepath = s:dein_repo_dir . "," . &runtimepath
 endif
@@ -33,8 +33,8 @@ endif
 if dein#load_state(s:dein_cache_path)
   call dein#begin(s:dein_cache_path)
 
-  call dein#load_toml('~/.config/nvim/dein.toml', {'lazy' : 0})
-  call dein#load_toml('~/.config/nvim/deinlazy.toml', {'lazy' : 1})
+  call dein#load_toml('~/.vim/dein.toml', {'lazy' : 0})
+  call dein#load_toml('~/.vim/deinlazy.toml', {'lazy' : 1})
 
   if exists('g:nyaovim_version')
     call dein#add('rhysd/nyaovim-popup-tooltip')

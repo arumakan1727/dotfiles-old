@@ -1,1 +1,1 @@
-/home/xfce/Dotfiles/.vimrc
+../.vimrc
