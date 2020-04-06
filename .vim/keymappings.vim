@@ -10,8 +10,8 @@ map , <SubLeader>
 " Cursor move
 nnoremap j gj
 nnoremap k gk
-nnoremap g; g;zz
-nnoremap g, g,zz
+nnoremap g; g;
+nnoremap g, g,
 
 "----------------------------------------------------------------------------------------
 " Copy, Paste, Cut
