@@ -15,7 +15,7 @@ sleep 0.5
 
 # xkeysnail (key remapping)
 #  -> https://github.com/mooz/xkeysnail
-if [ -x /usr/bin/xkeysnail ] && [ -f ${HOME}/.xkeysnail/config.py ]; then
+if [ -x /usr/bin/xkeysnail ] && [ -f ${HOME}/.xkeysnail-conf.py ]; then
   sudo /usr/bin/xkeysnail ${HOME}/.xkeysnail-conf.py &
 fi
 
