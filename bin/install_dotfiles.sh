@@ -22,7 +22,7 @@ link_to_homedir() {
   command echo "[INFO] backup_dir: $backup_dir"
 
   if [[ "$HOME" != "$dotdir" ]];then
-    for f in $dotdir/.??*; do
+    for f in $dotdir/.??* $dotdir/bin; do
       [[ `basename $f` == ".git" ]] && continue
 
       if [[ -L "$HOME/`basename $f`" ]];then
@@ -39,10 +39,9 @@ link_to_homedir() {
       command ln -snf $f $HOME
     done
 
-    if [ -d "$HOME/bin" ]; then
-      command mv "$HOME/bin/*" "$backup_dir/"
-    fi
-    command ln -snf $dotdir/bin $HOME
+    command echo "Restore(copy) $backup_dir/. -> ~/"
+    command cp -Rnv $backup_dir/. $dotdir/
+
   else
     command echo "same install src dest"
   fi
