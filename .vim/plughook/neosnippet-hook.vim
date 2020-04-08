@@ -21,7 +21,9 @@ smap <expr><TAB>
 imap <expr><CR>
       \ (pumvisible() && neosnippet#expandable()) ?
       \ "\<Plug>(neosnippet_expand_or_jump)" :
-      \ pumvisible() ? "\<C-y>" : "\<C-g>u<CR>"
+      \ pumvisible() ? "\<C-y>" : "\<CR>"
+
+let g:neosnippet_enable_completed_snippet = 1
 
 " For conceal markers.
 if has('conceal')

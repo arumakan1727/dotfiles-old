@@ -43,12 +43,4 @@ repo = 'Shougo/neco-vim'
 if = "has('nvim')"
 on_event = 'InsertEnter'
 
-# [[plugins]]
-# repo = 'dense-analysis/ale'
-# if = "has('nvim')"
-# on_event = 'InsertEnter'
-# hook_add = '''
-#   source ~/.vim/plughook/ale-hook.vim
-# '''
-
 # }}}

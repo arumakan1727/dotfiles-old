@@ -81,3 +81,6 @@ nnoremap <SubLeader>w :w<CR>
 
 "改行の挿入
 nnoremap <CR> i<CR><ESC>
+
+"ソース全体を整形
+nnoremap <SubLeader>= mmgg=G`m

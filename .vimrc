@@ -22,4 +22,7 @@ source ~/.vim/pluginst.vim
 " Key mappings
 source ~/.vim/keymappings.vim
 
-colorscheme iceberg
+" Template (for competitive programming)
+source ~/.vim/template-set.vim
+
+colorscheme sonokai
