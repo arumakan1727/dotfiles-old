@@ -40,3 +40,6 @@
 
 !/.config/fontconfig/
 !/.config/fontconfig/fonts.conf
+
+!/.config/i3/
+!/.config/i3/config
