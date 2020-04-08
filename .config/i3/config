@@ -183,6 +183,7 @@ bindsym Shift+Print exec --no-startup-id ~/bin/take-fullscreenshort.sh
 # Floating windows
 for_window [title = "^Event Tester$"] floating enable
 for_window [class = "^feh$"] floating enable
+for_window [class = "^font-manager$"] floating enable
 
 # gaps
 gaps outer 3
