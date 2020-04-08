@@ -8,8 +8,8 @@ xset r rate 280 30
 
 # IME
 export GTK_IM_MODULE=fcitx
-export XMODIFIERS=fcitx
 export QT_IM_MODULE=fcitx
+export XMODIFIERS="@im=fcitx"
 fcitx -rd &
 sleep 0.5
 
