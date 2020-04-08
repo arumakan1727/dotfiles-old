@@ -43,3 +43,6 @@
 
 !/.config/i3/
 !/.config/i3/config
+
+!/.config/alacritty/
+!/.config/alacritty/alacritty.yml
