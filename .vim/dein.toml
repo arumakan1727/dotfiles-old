@@ -91,12 +91,19 @@ hook_add = '''
 # Syntax highlight {{{
 [[plugins]]
 repo = 'cespare/vim-toml'
+on_ft = ['toml']
 
 [[plugins]]
-repo = 'bfrg/vim-cpp-modern'
+repo = 'octol/vim-cpp-enhanced-highlight'
+on_ft = ['c', 'cpp']
 
 [[plugins]]
 repo = 'mboughaba/i3config.vim'
+on_ft = ['i3config']
+
+[[plugins]]
+repo = 'zah/nim.vim'
+on_ft = ['nim']
 #}}}
 
 #-----------------------------------------------------------------------------------
