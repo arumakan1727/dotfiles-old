@@ -32,8 +32,11 @@ exec --no-startup-id sh ~/.fehbg
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
+# Application launch
 bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+w exec google-chrome-stable
+bindsym $mod+x exec slack
+bindsym $mod+m exec thunderbird
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -151,43 +154,34 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 
-# Launch mode
-mode "launch" {
-    bindsym f exec firefox
-    bindsym c exec google-chrome-stable
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-    bindsym $mod+o mode "default"
-}
-bindsym $mod+o mode "launch"
-
-
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
-mode "volumectl" {
-    bindsym k exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
-    bindsym j exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
-    bindsym Space exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-    bindsym Shift+Space exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-    bindsym $mod+v mode "default"
-}
-bindsym $mod+v mode "volumectl"
+bindsym $mod+plus exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
+bindsym $mod+minus exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
 
+# mode "volumectl" {
+#     bindsym k exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +2% && $refresh_i3status
+#     bindsym j exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
+#     bindsym Space exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+#     bindsym Shift+Space exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+#     bindsym Return mode "default"
+#     bindsym Escape mode "default"
+#     bindsym $mod+v mode "default"
+# }
+# bindsym $mod+v mode "volumectl"
 
 # screenshot
 bindsym Shift+Print exec --no-startup-id ~/bin/take-fullscreenshort.sh
-
 
 # Floating windows
 for_window [title = "^Event Tester$"] floating enable
 for_window [class = "^feh$"] floating enable
 for_window [class = "^font-manager$"] floating enable
+for_window [class = "^slack$"] floating enable
 
 # gaps
-gaps outer 3
-gaps inner 12
+gaps outer 0
+gaps inner 8
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
