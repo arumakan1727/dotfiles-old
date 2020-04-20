@@ -8,7 +8,7 @@ xmap <C-k>     <Plug>(neosnippet_expand_target)
 " Note: It must be "imap" and "smap".  It uses <Plug> mappings.
 imap <expr><Tab>
       \ neosnippet#jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" :
-      \ "\<Down>"
+      \ pumvisible() ? "\<Down>" :
       \ "\<Tab>"
 
 imap <expr><S-Tab>
