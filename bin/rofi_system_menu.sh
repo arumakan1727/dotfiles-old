@@ -2,8 +2,8 @@
 # rofi_system_menu.sh
 
 list=(
-  "Reboot"      "systemctl reboot"
   "Suspend"     "systemctl suspend"
+  "Reboot"      "systemctl reboot"
   "Shutdown"    "systemctl poweroff"
 )
 
