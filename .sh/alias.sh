@@ -13,7 +13,4 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 
-alias ..='cd ..'
-alias a='./a.out'
-
 alias ghqcd='cd $(ghq root)/$(ghq list | fzf)'
