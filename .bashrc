@@ -77,8 +77,12 @@ shopt -s expand_aliases
 shopt -s histappend
 
 # load my scripts
-if [ -d "${HOME}/.bash" ]; then
-  for rc in "${HOME}/.bash/*.sh"; do
+if [ -d "${HOME}/.sh/" ]; then
+  for rc in "${HOME}/.sh/*.sh"; do
     source $rc
   done
 fi
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/i3/.sdkman"
+[[ -s "/home/i3/.sdkman/bin/sdkman-init.sh" ]] && source "/home/i3/.sdkman/bin/sdkman-init.sh"
