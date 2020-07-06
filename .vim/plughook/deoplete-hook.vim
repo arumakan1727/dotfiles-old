@@ -1,11 +1,10 @@
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#auto_complete_delay = 10
-let g:deoplete#auto_refresh_delay = 1000
-let g:deoplete#auto_complete_start_length = 1
-let g:deoplete#enable_camel_case = 1
-let g:deoplete#enable_ignore_case = 1
-let g:deoplete#enable_refresh_always = 1
-let g:deoplete#enable_smart_case = 1
-let g:deoplete#file#enable_buffer_path = 1
-let g:deoplete#max_list = 10000
-let g:deoplete#max_menu_width = 70
+call deoplete#enable()
+call deoplete#custom#option('auto_complete_delay', 10)
+call deoplete#custom#option('auto_refresh_delay', 1000)
+call deoplete#custom#option('auto_complete_start_length', 2)
+call deoplete#custom#option('enable_camel_case', 1)
+call deoplete#custom#option('enable_ignore_case', 1)
+call deoplete#custom#option('enable_refresh_always', 1)
+call deoplete#custom#option('enable_smart_case', 1)
+call deoplete#custom#option('max_list', 1000)
+call deoplete#custom#option('max_menu_width', 70)

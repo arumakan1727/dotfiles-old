@@ -9,7 +9,8 @@ augroup END
 set timeout timeoutlen=1000 ttimeoutlen=10
 set backspace=indent,eol,start
 set whichwrap=b,s,h,l,<,>,[,],~
-set sh=fish
+set sh=zsh
+set spelllang=en,cjk
 
 "----------------------------------------------------------------------------------------
 " Completions
@@ -139,7 +140,7 @@ set showcmd           " 入力中のコマンドを表示
 set number            " 行番号表示
 set cursorline        " 現在行をハイライト
 "set relativenumber    " 行番号を現在行からの相対的な距離に
-set nowrap            " 画面幅で折り返さない
+"set nowrap            " 画面幅で折り返さない
 set list              " 不可視文字表示
 set listchars=tab:>\ ,trail:･,extends:>,precedes:<,nbsp:%
 set title             " タイトルの表示
