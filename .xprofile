@@ -24,4 +24,4 @@ fi
 #  -> http://www.shallowsky.com/linux/x-screen-blanking.html
 xset s off
 xset +dpms
-xset dpms 600 0 0
+xset dpms 1200 0 0
