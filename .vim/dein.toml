@@ -77,6 +77,24 @@ if = "has('nvim')"
 hook_add = '''
   source ~/.vim/plughook/ale-hook.vim
 '''
+
+[[plugins]]
+repo = 'easymotion/vim-easymotion'
+if = "has('nvim')"
+hook_add = '''
+  let g:EasyMotion_do_mapping = 0 " Disable default mappings
+
+  " `s{char}{char}{label}`
+  " Need one more keystroke, but on average, it may be more comfortable.
+  nmap s <Plug>(easymotion-overwin-f2)
+
+  " Turn on case-insensitive feature
+  let g:EasyMotion_smartcase = 1
+
+  " JK motions: Line motions
+  " nmap <Leader>j <Plug>(easymotion-j)
+  " nmap <Leader>k <Plug>(easymotion-k)
+'''
 # }}}
 
 #-----------------------------------------------------------------------------------
