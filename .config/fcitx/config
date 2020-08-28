@@ -1,6 +1,6 @@
 [Hotkey]
 # 入力メソッドのオンオフ
-TriggerKey=ZENKAKUHANKAKU CTRL_SPACE
+TriggerKey=ZENKAKUHANKAKU
 # アクティブでない時だけその他のトリガーキーを使用する
 # Available Value:
 # True False
