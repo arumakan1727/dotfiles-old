@@ -36,9 +36,9 @@ floating_modifier $mod
 
 # Application launch
 bindsym $mod+Return exec xfce4-terminal
-bindsym $mod+w exec --no-startup-id google-chrome-stable
-bindsym $mod+x exec --no-startup-id slack
-bindsym $mod+m exec --no-startup-id thunderbird
+# bindsym $mod+w exec --no-startup-id google-chrome-stable
+# bindsym $mod+x exec --no-startup-id slack
+# bindsym $mod+m exec --no-startup-id thunderbird
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -181,6 +181,7 @@ for_window [title = "^Event Tester$"] floating enable
 for_window [class = "^feh$"] floating enable
 for_window [class = "^font-manager$"] floating enable
 for_window [class = "^slack$"] floating enable
+for_window [class = "^Tk$"] floating enable
 
 # gaps
 gaps outer 0
