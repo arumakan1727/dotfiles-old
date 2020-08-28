@@ -4,9 +4,9 @@
 alpha="cc"   # opacity (00〜FF)
 
 options=(
-  -modi            "combi,system:${HOME}/bin/rofi_system_menu.sh,calc:qalc,run,ssh"
-  -combi-modi      "window,drun"
-  -show            "combi"
+  -modi            "drun,system:${HOME}/bin/rofi_system_menu.sh,calc:qalc,ssh"
+  -combi-modi      "drun"
+  -show            "drun"
   -font            "monospace 16"
   -width           "60"
   -padding         "40"
