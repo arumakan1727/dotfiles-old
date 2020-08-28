@@ -45,6 +45,7 @@ repo = 'ntpeters/vim-better-whitespace'
 hook_add = '''
   let g:better_whitespace_enabled = 0
   let g:strip_whitespace_on_save = 0
+  let g:better_whitespace_filetypes_blacklist = ['txt', 'markdown', 'md']
 '''
 
 [[plugins]] # vim-surround とかの操作も . でリピートできるようにする
@@ -53,7 +54,8 @@ repo = 'tpope/vim-repeat'
 [[plugins]]
 repo = 'Yggdroot/indentLine'
 hook_add = '''
-  let g:indentLine_char = '┊'
+  let g:indentLine_enabled = 1
+  let g:indentLine_char = '¦'
 '''
 # }}}
 
@@ -93,8 +95,15 @@ hook_add = '''
 
   " JK motions: Line motions
   " nmap <Leader>j <Plug>(easymotion-j)
-  " nmap <Leader>k <Plug>(easymotion-k)
+      " nmap <Leader>k <Plug>(easymotion-k)
 '''
+
+# [[plugins]]
+# repo = 'nathanaelkane/vim-indent-guides'
+# if = "has('nvim')"
+# hook_add = '''
+# let g:indent_guides_enable_on_vim_startup = 1
+# '''
 # }}}
 
 #-----------------------------------------------------------------------------------

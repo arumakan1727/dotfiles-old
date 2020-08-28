@@ -28,6 +28,9 @@ nnoremap <SubLeader>P "+P
 " Window
 nnoremap <Leader>w <C-w>
 
+nnoremap <Tab> :tabnext<CR>
+nnoremap <S-Tab> :tabprev<CR>
+
 "----------------------------------------------------------------------------------------
 " Undo behavior
 " imap <BS> <C-g>u<BS>
@@ -56,10 +59,10 @@ nnoremap ]t           :tabnext<CR>
 
 "----------------------------------------------------------------------------------------
 " Search
-noremap * g*N
-noremap # g#n
-noremap g* *N
-noremap g# #n
+" noremap * g*N
+" noremap # g#n
+" noremap g* *N
+" noremap g# #n
 
 "----------------------------------------------------------------------------------------
 " Completion

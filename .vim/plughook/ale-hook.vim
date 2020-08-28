@@ -5,7 +5,7 @@ let g:ale_lint_on_insert_leave = 1
 let g:ale_fix_on_save = 1
 let g:ale_lint_delay = 500
 let g:ale_fixers = {
-      \ '*': ['remove_trailing_lines', 'trim_whitespace'],
+      \ '*': ['remove_trailing_lines'],
       \ 'python': ['black'],
       \ 'cpp': ['clang-format'],
       \ 'c': ['clang-format'],
@@ -15,7 +15,7 @@ let g:ale_linters = {
     \ 'cpp': ['gcc'],
     \ 'c': ['gcc'],
     \ }
-let g:ale_cpp_gcc_options = '-std=c++17 -Wall -Wextra -Wshadow -Wno-sign-compare'
+let g:ale_cpp_gcc_options = '-std=c++17 -Wall -Wextra -Wshadow -Wno-sign-compare -Wno-char-subscripts'
 let g:ale_completion_enabled = 1
 let g:ale_sign_column_always = 1
 let g:ale_sign_warning = ''
