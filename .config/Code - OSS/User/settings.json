@@ -1,0 +1,52 @@
+{
+  "editor.formatOnType": false,
+  "editor.formatOnSave": true,
+  "terminal.integrated.shell.linux": "/bin/zsh",
+  "markdown.preview.fontFamily": "'Myrica M', -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif",
+  "window.zoomLevel": 1,
+  "editor.renderWhitespace": "boundary",
+  "files.exclude": {
+    "**/*.bin": true,
+    "**/*.out": true,
+    "**/*.zip": true
+  },
+  "editor.fontFamily": "'Myrica M', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.minimap.enabled": false,
+  "editor.cursorBlinking": "solid",
+  "vim.cursorStylePerMode.insert": "line",
+  "vim.cursorStylePerMode.normal": "block",
+  "vim.cursorStylePerMode.replace": "underline",
+  "vim.useSystemClipboard": true,
+  "vim.foldfix": true,
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "vim.easymotion": true,
+  "vim.easymotionKeys": "hklyuiopnm,qwertzxcvbasdgjf;",
+  "vim.easymotionMarkerBackgroundColor": "#66dd55",
+  "vim.easymotionMarkerForegroundColorOneChar": "#333333",
+  "vim.surround": true,
+  "vim.insertModeKeyBindingsNonRecursive": [],
+  "vim.normalModeKeyBindings": [],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<Enter>"],
+      "after": ["i", "<Enter>", "<Right>", "<Esc>"]
+    },
+    {
+      "before": ["<leader>", "<leader>"],
+      "after": ["<leader>", "<leader>", "2", "s", "<char>", "<char>"]
+    },
+    {
+      "before": ["<leader>", "y"],
+      "after": ["m", "_", "g", "g", "V", "G", "y", "`", "_"]
+    }
+  ],
+  "workbench.colorTheme": "Material Theme High Contrast",
+  "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
+  "bracket-pair-colorizer-2.showVerticalScopeLine": false,
+  "terminal.integrated.fontFamily": "'RictyDiminishedDiscord NF'",
+  "terminal.integrated.fontSize": 12,
+  "editor.fontSize": 12,
+  "C_Cpp.updateChannel": "Insiders",
+  "workbench.iconTheme": "material-icon-theme"
+}
