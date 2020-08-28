@@ -10,9 +10,10 @@
 !/.profile
 !/.vimrc
 !/.xinitrc
-!/.xkeysnail-conf.py
 !/.xprofile
 !/LICENSE
+
+!/unused/
 
 #--------------------------------------
 # /.bash/
@@ -28,6 +29,17 @@
 # /bin/
 !/bin/
 /bin/Push-and-Copy.py
+
+#--------------------------------------
+# /.xkb
+!/.xkb/
+!/.xkb/keymap/
+!/.xkb/keymap/mykbd
+!/.xkb/symbols/
+!/.xkb/symbols/mySymbols
+!/.xkb/memo/
+!/.xkb/memo/*
+
 
 #--------------------------------------
 # /.config/

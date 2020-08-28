@@ -1,0 +1,16 @@
+// /usr/share/X11/xkb/keycodes/evdev
+// ctrl, alt, super などのキーは modifier_map で再定義しないとダメらしい
+
+xkb_symbols "myKeyReplaces" {
+  replace key <HENK>    { [ Control_L, Control_L ] };
+  modifier_map Control  { <HENK> };
+
+  replace key <CAPS>    { [ Control_L, Control_L ] };
+  modifier_map Control  { <CAPS> };
+
+  replace key <HKTG>    { [ Alt_R, Alt_R ] };
+  modifier_map Mod1     { <HKTG> };
+
+  replace key <MUHE>    { [ Super_L, Super_L ] };
+  modifier_map Mod4     { <MUHE> };
+};

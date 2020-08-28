@@ -15,8 +15,13 @@ sleep 0.5
 
 # xkeysnail (key remapping)
 #  -> https://github.com/mooz/xkeysnail
-if [ -x /usr/bin/xkeysnail ] && [ -f ${HOME}/.xkeysnail-conf.py ]; then
-  sudo /usr/bin/xkeysnail ${HOME}/.xkeysnail-conf.py &
+# if [ -x /usr/bin/xkeysnail ] && [ -f ${HOME}/.xkeysnail-conf.py ]; then
+#   sudo /usr/bin/xkeysnail ${HOME}/.xkeysnail-conf.py &
+# fi
+
+# key remapping
+if [ -x ${HOME}/bin/load-my-xkb.sh ]; then
+  ${HOME}/bin/load-my-xkb.sh
 fi
 
 # Power saving for display monitor
