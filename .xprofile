@@ -20,9 +20,9 @@ sleep 0.5
 # fi
 
 # key remapping
-if [ -x ${HOME}/bin/load-my-xkb.sh ]; then
-  ${HOME}/bin/load-my-xkb.sh
-fi
+# if [ -x ${HOME}/bin/load-my-xkb.sh ]; then
+#   ${HOME}/bin/load-my-xkb.sh
+# fi
 
 # Power saving for display monitor
 #  -> https://wiki.archlinux.jp/index.php/Display_Power_Management_Signaling
