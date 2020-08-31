@@ -28,8 +28,8 @@ nnoremap <SubLeader>P "+P
 " Window
 nnoremap <Leader>w <C-w>
 
-nnoremap <Tab> :tabnext<CR>
-nnoremap <S-Tab> :tabprev<CR>
+nnoremap L :tabnext<CR>
+nnoremap H :tabprev<CR>
 
 "----------------------------------------------------------------------------------------
 " Undo behavior

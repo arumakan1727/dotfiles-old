@@ -9,6 +9,7 @@ let g:ale_fixers = {
       \ 'python': ['black'],
       \ 'cpp': ['clang-format'],
       \ 'c': ['clang-format'],
+      \ 'go': ['gofmt', 'goimports'],
       \ }
 let g:ale_linters = {
     \ 'python': ['flake8'],
