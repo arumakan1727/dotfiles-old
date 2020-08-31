@@ -39,9 +39,17 @@
     {
       "before": ["<leader>", "y"],
       "after": ["m", "_", "g", "g", "V", "G", "y", "`", "_"]
+    },
+    {
+      "before": ["H"],
+      "after": ["g", "T"]
+    },
+    {
+      "before": ["L"],
+      "after": ["g", "t"]
     }
   ],
-  "workbench.colorTheme": "Material Theme High Contrast",
+  "workbench.colorTheme": "Monokai Classic",
   "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
   "bracket-pair-colorizer-2.showVerticalScopeLine": false,
   "terminal.integrated.fontFamily": "'RictyDiminishedDiscord NF'",
