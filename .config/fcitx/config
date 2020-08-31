@@ -33,7 +33,7 @@ SwitchKey=Custom
 # 入力メソッドをオンに
 #ActivateKey=
 # 入力メソッドをオフに
-#InactivateKey=
+InactivateKey=ESCAPE
 # 入力メソッドの切換をホットキーで
 # Available Value:
 # True False
@@ -41,7 +41,7 @@ IMSwitchKey=False
 # 入力メソッドの切換にオフも含む
 # Available Value:
 # True False
-#IMSwitchIncludeInactive=False
+IMSwitchIncludeInactive=True
 # 入力メソッドの切換
 # Available Value:
 # CTRL_SHIFT
@@ -144,4 +144,3 @@ SwitchPreedit=
 # Available Value:
 # True False
 #HideInputWindowWhenOnlyOneCandidate=False
-
