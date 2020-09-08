@@ -16,7 +16,9 @@ let g:ale_linters = {
     \ 'cpp': ['gcc'],
     \ 'c': ['gcc'],
     \ }
-let g:ale_cpp_gcc_options = '-std=c++17 -Wall -Wextra -Wshadow -Wno-sign-compare -Wno-char-subscripts'
+let g:ale_cpp_gcc_options =
+    \ " -std=c++17 -fsyntax-only @" . $HOME . "/Competitive-Programming/.share/cxx_flags.txt" .
+    \ " -I " . $HOME . "/Competitive-Programming/.share/include/"
 let g:ale_completion_enabled = 1
 let g:ale_sign_column_always = 1
 let g:ale_sign_warning = ''
