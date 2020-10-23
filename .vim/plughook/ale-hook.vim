@@ -16,7 +16,8 @@ let g:ale_linters = {
     \ 'cpp': ['gcc'],
     \ 'c': ['gcc'],
     \ }
-let g:ale_cpp_gcc_options =
+let g:ale_cpp_cc_executable = 'gcc'
+let g:ale_cpp_cc_options =
     \ " -std=c++17 -fsyntax-only @" . $HOME . "/Competitive-Programming/.share/cxx_flags.txt" .
     \ " -I " . $HOME . "/Competitive-Programming/.share/include/"
 let g:ale_completion_enabled = 1

@@ -35,7 +35,7 @@ autocmd! FileType * set formatoptions=clmrqj
 "----------------------------------------------------------------------------------------
 " Command Completion
 set wildmenu
-set wildmode=full
+set wildmode=longest,full
 set history=10000
 
 "----------------------------------------------------------------------------------------

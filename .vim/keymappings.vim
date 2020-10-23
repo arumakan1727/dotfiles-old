@@ -21,8 +21,6 @@ nnoremap x "_x
 
 vnoremap <SubLeader>y "+y
 vnoremap <SubLeader>d "+d
-nnoremap <SubLeader>p "+p
-nnoremap <SubLeader>P "+P
 
 "----------------------------------------------------------------------------------------
 " Window
@@ -45,6 +43,8 @@ cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 cnoremap <C-f> <Right>
 cnoremap <C-b> <Left>
+cnoremap <C-h> <BS>
+cnoremap <C-d> <Del>
 
 "----------------------------------------------------------------------------------------
 " [,] Moving
@@ -67,8 +67,8 @@ nnoremap ]t           :tabnext<CR>
 "----------------------------------------------------------------------------------------
 " Completion
 "補完で選択されているものを挿入しない
-imap <expr><C-n> pumvisible() ? "\<Down>" : "\<C-n>"
-imap <expr><C-p> pumvisible() ? "\<Up>" : "\<C-p>"
+" inoremap <expr><c-n> pumvisible() ? "\<Down>" : "\<C-n>"
+" inoremap <expr><c-p> pumvisible() ? "\<Up>" : "\<C-p>"
 
 "----------------------------------------------------------------------------------------
 " Terminal
