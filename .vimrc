@@ -25,4 +25,4 @@ source ~/.vim/keymappings.vim
 " Template (for competitive programming)
 source ~/.vim/template-set.vim
 
-colorscheme sonokai
+colorscheme gruvbox
