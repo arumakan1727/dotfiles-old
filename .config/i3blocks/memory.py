@@ -51,7 +51,7 @@ class MemInfo:
 # size: kB
 def convert(size, cnt):
     if size < 1024 ** (cnt + 1):
-        return f"{size / 1024 ** cnt:.3g}{units[cnt]}"
+        return f"{size / 1024 ** cnt:.2f}{units[cnt]}"
     return convert(size, cnt + 1)
 
 
