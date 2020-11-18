@@ -26,10 +26,12 @@ on_i = 1
 merged = '0'
 hook_source = '''
   source ~/.vim/plughook/coc-hook.vim
+  let b:coc_pairs_disabled = ['<']
 '''
 
 [[plugins]]
 repo = 'suan/vim-instant-markdown'
+if = "has('nvim')"
 on_ft = ['markdown']
 hook_add = '''
 let g:instant_markdown_slow = 1
