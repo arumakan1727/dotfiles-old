@@ -24,6 +24,9 @@
 !/.vim/
 !/.vim/*.vim
 !/.vim/*.toml
+!/.vim/*.json
+!/.vim/plughook/
+!/.vim/plughook/*
 
 #--------------------------------------
 # /bin/

@@ -1,0 +1,37 @@
+{
+  "suggest.noselect": true,
+  "suggest.preferCompleteThanJumpPlaceholder": false,
+  "languageserver": {
+    "clangd": {
+      "command": "clangd",
+      "args": ["--background-index", "--header-insertion=never"],
+      "rootPatterns":["compile_flags.txt", "compile_commands.json", ".vim/", ".git/", ".hg/" ],
+      "filetypes": ["c", "cpp"]
+    },
+    "bash":{
+      "command": "bash-language-server",
+      "args": ["start"],
+      "filetypes": ["sh"],
+      "ignoredRootPaths": ["~"]
+    },
+    "python":{
+      "command": "python",
+      "args": [
+        "-mpyls",
+        "-vv"
+      ],
+      "filetypes": ["python"]
+    },
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["go"]
+    }
+  },
+  "snippets.ultisnips.directories": [
+    "./snippets",
+    "./kyopro-short-snips",
+    "./kyopro-long-snips"
+  ],
+  "snippets.priority": 5
+}
