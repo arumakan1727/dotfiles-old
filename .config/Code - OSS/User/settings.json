@@ -8,9 +8,13 @@
   "files.exclude": {
     "**/*.bin": true,
     "**/*.out": true,
-    "**/*.zip": true
+    "**/*.zip": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
   },
-  "editor.fontFamily": "'Myrica M', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   "editor.minimap.enabled": false,
   "editor.cursorBlinking": "solid",
   "vim.cursorStylePerMode.insert": "line",
@@ -47,14 +51,39 @@
     {
       "before": ["L"],
       "after": ["g", "t"]
+    },
+    {
+      "before": ["j"],
+      "after": ["g", "j"]
+    },
+    {
+      "before": ["k"],
+      "after": ["g", "k"]
     }
   ],
-  "workbench.colorTheme": "Monokai Classic",
+  "workbench.colorTheme": "Gruvbox Dark Medium",
   "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
   "bracket-pair-colorizer-2.showVerticalScopeLine": false,
-  "terminal.integrated.fontFamily": "'RictyDiminishedDiscord NF'",
-  "terminal.integrated.fontSize": 12,
-  "editor.fontSize": 12,
+  "terminal.integrated.fontFamily": "'Fira Code'",
+  "terminal.integrated.fontSize": 11,
+  "editor.fontSize": 10,
   "C_Cpp.updateChannel": "Insiders",
-  "workbench.iconTheme": "material-icon-theme"
+  "workbench.iconTheme": "material-icon-theme",
+  "go.buildOnSave": "off",
+  "keyboard.dispatch": "keyCode",
+  "C_Cpp.default.includePath": ["./include/"],
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "go.testTimeout": "10s",
+  "go.useLanguageServer": true,
+  "go.vetFlags": ["-all"],
+  "git.autofetch": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "java.trace.server": "messages",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "markdown.extension.tableFormatter.enabled": false,
+  "markdown.extension.tableFormatter.normalizeIndentation": true
+  // "bracket-pair-colorizer-2.colors": ["Orange", "Orchid", "SkyBlue"]
 }
